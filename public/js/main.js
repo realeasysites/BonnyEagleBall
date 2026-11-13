@@ -48,7 +48,7 @@
   if (y) y.textContent = new Date().getFullYear();
 
   // Reveal on scroll
-  var targets = document.querySelectorAll('.bout:not(.game), .quote, .board, .inventory li, .coach-mark, .coach-copy, .fb-frame, .flyer, .visit');
+  var targets = document.querySelectorAll('.bout:not(.game), .quote, .board, .inventory li, .coach-mark, .coach-copy, .snap, .fb-frame, .flyer, .visit');
   if ('IntersectionObserver' in window) {
     var io = new IntersectionObserver(function (entries) {
       entries.forEach(function (en) {

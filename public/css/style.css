@@ -412,3 +412,15 @@ p { margin: 0 0 1em; }
   .games .bout-freq small { font-size: .95rem; }
   .card-legend { flex-wrap: wrap; }
 }
+
+/* Scrapbook */
+.scrapbook { padding: 100px 0; background: var(--paper-2); border-top: 3px double var(--ink); }
+.snaps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.snap { margin: 0; background: #fff; border: 3px solid var(--ink); padding: 8px 8px 0; box-shadow: 5px 5px 0 var(--ink); }
+.snap:nth-child(odd) { rotate: -1deg; } .snap:nth-child(even) { rotate: 1deg; }
+.snap img { width: 100%; aspect-ratio: 4/5; object-fit: cover; border: 2px solid var(--ink); }
+.snap figcaption { font-family: var(--cond); text-transform: uppercase; letter-spacing: 2px; font-weight: 700; text-align: center; padding: 8px 0; font-size: .85rem; }
+.loteria-front img { object-position: center; }
+@media (max-width: 680px) { .scrapbook { padding: 70px 0; } .snaps { grid-template-columns: 1fr 1fr; gap: 14px; } .snap { rotate: 0deg !important; padding: 5px 5px 0; box-shadow: 3px 3px 0 var(--ink); margin-bottom: 14px; } .snap figcaption { font-size: .7rem; letter-spacing: 1px; } }
+
+@media (max-width: 1020px) and (min-width: 681px) { .snaps { grid-template-columns: repeat(3, 1fr); } }
